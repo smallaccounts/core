@@ -1,0 +1,27 @@
+{
+    "name": "smallaccounts/core",
+    "description": "Core accounting functionality for the SmallAccounts app",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Smallaccounts\\Core\\App\\": "src/app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sharif Khan"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/laravel": "^9.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers":  [
+                "Smallaccounts\\Core\\App\\Providers\\CoreServiceProvider"
+            ]
+        }
+    }
+}
